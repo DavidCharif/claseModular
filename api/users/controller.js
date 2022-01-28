@@ -23,3 +23,8 @@ export const getUserData = async () => {
     console.log("Usuario agregado");
 
 }
+
+export const deleteButton = async (id) => {
+    await delUser(id,url)
+
+}

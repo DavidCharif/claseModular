@@ -7,6 +7,9 @@
         -> ENVIAR AL CONTROLADOR DATOS PARA LA RESPUESTA DE LA PETICIÓN
 */
 
+import { addtoDB } from "./model.js";
+
+
 export const getUsers = async url => {
     const resp = await fetch(url);
     const data = await resp.json();
@@ -14,11 +17,5 @@ export const getUsers = async url => {
 }
 
 export const addUser = async (user,url) => {
-    await fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(user),
-        headers: {
-            "Content-Type" : "application/json; charset=utf-8"
-        }
-    })
+    await addtoDB(user,url);
 }

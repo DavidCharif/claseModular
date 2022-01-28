@@ -1,4 +1,5 @@
 import { tableElement } from "../../scripts/user/domElements.js"
+import { inputUrl,inputNombre,inputCorreo,inputDescripcion } from "../../scripts/user/domElements.js";
 
 export const addHtml = obj => {
     obj.forEach((elemento) => {
@@ -15,4 +16,9 @@ export const addHtml = obj => {
         </tr>
       `
     })
+}
+
+export const recolectarInputs = () => {
+    let arrayUser = {inputUrl,inputNombre,inputCorreo,inputDescripcion}
+    return arrayUser;
 }

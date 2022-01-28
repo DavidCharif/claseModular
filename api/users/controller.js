@@ -6,11 +6,20 @@
         -> ENVIAR UNA RESPUESTA.
 */
 import { urlUsers } from "../../conexion/url.js";
-
 import {getUsers} from "../users/service.js"
 import { addHtml } from "./vista.js";
+import { addUser } from "../users/service.js";
+import { recolectarInputs } from "./vista.js";
+import { urlUsers as url } from "../../conexion/url.js";
 
 export const getElements = async () => {
     let users = await getUsers(urlUsers);
     addHtml(users);
+}
+
+export const getUserData = async () => {
+    let datos = recolectarInputs();
+    await addUser(datos,url);
+    console.log("Usuario agregado");
+
 }

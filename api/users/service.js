@@ -12,3 +12,13 @@ export const getUsers = async url => {
     const data = await resp.json();
     return data;
 }
+
+export const addUser = async (user,url) => {
+    await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(user),
+        headers: {
+            "Content-Type" : "application/json; charset=utf-8"
+        }
+    })
+}

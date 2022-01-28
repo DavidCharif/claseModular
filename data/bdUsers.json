@@ -13,20 +13,6 @@
       "email": "carlos@gmail.com",
       "description": "Lorem Ipsum",
       "id": 2
-    },
-    {
-      "inputUrl": "",
-      "inputNombre": "",
-      "inputCorreo": "",
-      "inputDescripcion": "",
-      "id": 3
-    },
-    {
-      "inputUrl": "",
-      "inputNombre": "",
-      "inputCorreo": "",
-      "inputDescripcion": "",
-      "id": 4
     }
   ]
 }

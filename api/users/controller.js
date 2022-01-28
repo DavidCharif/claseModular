@@ -11,6 +11,7 @@ import { addHtml } from "./vista.js";
 import { addUser } from "../users/service.js";
 import { recolectarInputs } from "./vista.js";
 import { urlUsers as url } from "../../conexion/url.js";
+import { delUser } from "./model.js";
 
 export const getElements = async () => {
     let users = await getUsers(urlUsers);
@@ -26,5 +27,6 @@ export const getUserData = async () => {
 
 export const deleteButton = async (id) => {
     await delUser(id,url)
+    console.log("Usuario eliminado")
 
 }

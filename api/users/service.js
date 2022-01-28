@@ -8,6 +8,7 @@
 */
 
 import { addtoDB } from "./model.js";
+import { delUser } from "./model.js";
 
 
 export const getUsers = async url => {
@@ -18,4 +19,8 @@ export const getUsers = async url => {
 
 export const addUser = async (user,url) => {
     await addtoDB(user,url);
+}
+
+export const deleteUser = (id,url) => {
+    delUser(id,url)
 }

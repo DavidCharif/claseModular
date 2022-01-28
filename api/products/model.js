@@ -1,0 +1,10 @@
+/*
+    MODELO -> MANIPULAR LA BASE DE DATOS
+        -> RECIBE UNA SOLICITUD DESDE EL SERVICIO
+            -> OBTENER DATOS DE LA BASE DATOS
+            -> ACTUALIZAR
+            -> GUARDAR NUEVOS DATOS
+            -> ELIMINAR DATOS EXISTENTES.
+        -> LOS ENVÍA AL SERVICIO
+*/
+// post - put - delete 
